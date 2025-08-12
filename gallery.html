@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alayna Beckstead - Photo Gallery</title>
+
+    <!-- Navigation -->
+  <nav class="nav-top">
+    <div class="nav-logo">Alayna Beckstead </div>
+    <ul class="nav-links">
+     <li><a href="index.html">About Me</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="scratch.html">Scratch</a></li>
+      <li><a href="app.html">Game</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+       
+    
+    </ul>
+  </nav>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #fdfdfd;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-family: 'Playfair Display', serif;
+      color: #333;
+    }
+
+    nav {
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff7b54;
+    }
+  </style>
+</head>
+<body>
+
+ 
+
+  <h1>📸 My Photo Gallery</h1>
+
+  <section class="gallery">
+       <img src="alayna.JPEG" alt="Sports or Activities" />
+       <img src="camping.jpg" alt="Personal or Fun" />
+   
+    <img src="image5.jpg" alt="Lifestyle" />
+    <img src="image3.JPG" alt="Business or Content Work" />
+    <img src="image4.jpg" alt="Creative or Family" />
+ <img src="powell.jpg" alt="Special Moment" />
+    <img src="food.jpg" alt="Adventure or Experience" />
+    <img src="shoes.jpg" alt="Memorable Moment" />
+    <img src="flying.jpg" alt="Nature or Hobbies" />
+     <img src="paris.jpg" alt="Travel or Moment 3" />
+<img src="byu.jpg" alt="Family or Friends" />
+   <img src="balloon.jpg" alt="Nature or Hobbies" />
+     <img src="image2.JPG" alt="Travel or Moment 2" />
+    <img src="image6.jpg" alt="Nature or Hobbies" />
+    <img src="rodeo.jpg" alt="Event or Celebration" />
+    <img src="buisness.jpg" alt="Family or Friends" />
+     <img src="image1.JPG" alt="Travel or Moment 1" />
+    <img src="snowboarding.jpg" alt="Event or Celebration" />
+    <img src="northernlights.jpg" alt="Event or Celebration" />
+    <img src="turtle.JPG" alt="Family or Friends" />
+  </section>
+
+</body>
+</html>

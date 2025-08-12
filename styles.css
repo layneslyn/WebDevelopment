@@ -1,0 +1,107 @@
+/*  "About Me" Style  */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Navigation */
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #0077cc;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #111111;
+}
+
+.hero-text p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #444;
+}
+
+/* Hero Image */
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}

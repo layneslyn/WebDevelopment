@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alayna's Riddle App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="styles.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fef9f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffb347;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .riddle-box {
+      margin: 50px auto;
+      padding: 40px;
+      max-width: 600px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .button {
+      margin-top: 20px;
+      padding: 12px 28px;
+      background-color: #ffb347;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #ff9900;
+    }
+
+    nav {
+      padding: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #555;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff9900;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="scratch.html">Scratch</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="app.html">Game</a>
+  </nav>
+
+  <header>
+    <h1>✨ Alayna's Riddle Generator ✨</h1>
+    <p>Click the button to get a fun riddle!</p>
+  </header>
+
+  <div class="riddle-box">
+    <h2 id="riddle">Ready for a riddle?</h2>
+    <button class="button" onclick="generateRiddle()">Give me a riddle</button>
+  </div>
+
+  <script>
+    const riddles = [
+      "What has to be broken before you can use it? — An egg.",
+      "I'm tall when I'm young, and I'm short when I'm old. What am I? — A candle.",
+      "What month of the year has 28 days? — All of them!",
+      "What is full of holes but still holds water? — A sponge.",
+      "What question can you never answer yes to? — Are you asleep yet?",
+      "What can’t talk but will reply when spoken to? — An echo.",
+      "The more of me you take, the more you leave behind. What am I? — Footsteps."
+    ];
+
+    function generateRiddle() {
+      const riddle = riddles[Math.floor(Math.random() * riddles.length)];
+      document.getElementById('riddle').innerText = riddle;
+    }
+  </script>
+
+</body>
+</html>
